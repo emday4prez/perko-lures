@@ -19,9 +19,12 @@ function Hero() {
             </h2>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className='bg-zinc-50 flex justify-center items-start' offset={.9999} speed={.2}>
-        <h2 className='text-3xl p-6 font-extrabold tracking-tight text-slate-900 sm:text-4xl'>   <span className='block text-slate-900'>Use bigger bait.</span></h2>
+      <ParallaxLayer className='bg-zinc-50 flex flex-col justify-center items-center' offset={.9999} speed={.2}>
+        <h2 className='text-3xl p-6 pt-32 font-extrabold tracking-tight text-slate-900 sm:text-4xl'>   <span className='text-slate-900'>Use bigger bait.</span></h2>
+       <h2 className='text-3xl p-6 pt-48 font-extrabold tracking-tight text-slate-900 sm:text-4xl'>   <span className=' text-slate-900'>Perko Lures</span></h2>
+        <p>handcrafted, extra large fishing lures designed to catch the biggest freshwater fish. Each lure is carefully crafted to perfection, ensuring that it is not only effective but also visually appealing to attract the biggest fish. Perko Lures is dedicated to providing anglers with the best tools to make their fishing experience both exciting and successful.</p>
       </ParallaxLayer>
+    
 
     </Parallax>
     </div>
