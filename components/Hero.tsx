@@ -68,7 +68,10 @@ function Hero() {
             </h2>
           </div>
           <p className='text-center pt-12 text-slate-50'>
-            &copy; {new Date().getFullYear()} Perko Lures. All rights reserved.
+            &copy; {new Date().getFullYear()} Perko Lures. All rights reserved.{' '}
+            <Link className='underline hover:text-zinc-300' href='/privacy'>
+              Privacy Policy
+            </Link>
           </p>
         </ParallaxLayer>
       </Parallax>
