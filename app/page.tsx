@@ -1,18 +1,16 @@
-import { Inter } from '@next/font/google'
-import Hero from '@/components/Hero'
+import { Inter } from '@next/font/google';
+import Hero from '@/components/Hero';
+import PictureGrid from '@/components/PictureGrid';
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <>
-   
       <main>
-      <Hero/>
-    </main>
-   
+        <Hero />
+        <PictureGrid />
+      </main>
     </>
-  
-  )
+  );
 }

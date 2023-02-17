@@ -3,6 +3,17 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
 
-module.exports = nextConfig
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/dfyd1vtup/image/upload/**',
+      },
+    ],
+  },
+};
+
+module.exports = nextConfig;
