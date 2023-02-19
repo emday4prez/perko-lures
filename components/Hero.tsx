@@ -13,9 +13,9 @@ function Hero() {
         pages={3}
       >
         <ParallaxLayer
-          className='border-2 border-pink-900 min-h-screen bg-gradient-to-tr from-slate-800 via-slate-900 to-zinc-800 flex justify-center items-center'
+          className='min-h-screen bg-gradient-to-tr from-slate-800 via-slate-900 to-zinc-800 flex justify-center items-center'
           offset={0}
-          speed={0.5}
+          speed={0.3}
         >
           <Image
             placeholder='blur'
@@ -34,7 +34,7 @@ function Hero() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          className='bg-zinc-50 border border-red-700 flex flex-col justify-center items-center'
+          className='bg-zinc-50 flex flex-col justify-center items-center'
           offset={0.9999}
           speed={0.2}
         >
@@ -61,14 +61,20 @@ function Hero() {
         <ParallaxLayer className='bg-zinc-50' offset={2} speed={0.1}>
           <PictureGrid />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.5} speed={3} className='bg-slate-800 pt-5'>
-          <div className='max-w-xl z-10 mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between bg-orange-500 rounded shadow-2xl'>
-            <h2 className='text-3xl text-center p-6 font-extrabold tracking-tight text-slate-900 sm:text-4xl'>
-              <span className='text-center'>CHECK OUT OUR LURES</span>
-            </h2>
-          </div>
+        <ParallaxLayer offset={2.4} speed={3} className='bg-slate-800 pt-5'>
+          <Link href='/lures'>
+            <div className='max-w-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between bg-orange-500 rounded shadow-2xl hover:shadow-md hover:bg-orange-800  hover:text-zinc-50  text-slate-900 transition-all'>
+              <h2 className='text-3xl text-center p-6 font-extrabold tracking-tight  sm:text-4xl '>
+                <span className='text-center'>CHECK OUT OUR LURES</span>
+              </h2>
+            </div>
+          </Link>
+
           <p className='text-center pt-12 text-slate-50'>
-            &copy; {new Date().getFullYear()} Perko Lures. All rights reserved.
+            &copy; {new Date().getFullYear()} Perko Lures. All rights reserved.{' '}
+            <Link className='underline hover:text-zinc-300' href='/privacy'>
+              Privacy Policy
+            </Link>
           </p>
         </ParallaxLayer>
       </Parallax>
