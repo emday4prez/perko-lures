@@ -19,7 +19,7 @@ function Lures() {
         Muskie fishing is not for the faint of heart, but with the right
         equipment, you can increase your chances of reeling in a trophy catch.
         Each lure is hand crafted with precision to mimic the natural movement
-        and appearance of the muskie's prey.
+        and appearance of the muskie&rsquo;s prey.
       </p>
 
       <div className='max-w-6xl p-2 py-10 grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3   '>
